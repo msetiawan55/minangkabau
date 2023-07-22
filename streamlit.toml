@@ -1,0 +1,11 @@
+[general]
+email = "presillia03@gmial.com"
+
+[server]
+headless = true
+port = $PORT
+enableCORS = false
+
+[git]
+repo = "https://github.com/presilliasianturi/bunglon"
+branch = "master"

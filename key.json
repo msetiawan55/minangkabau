@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "translasi-lampung",
+  "private_key_id": "360f27c144efe9cbf426ffaefe1984dd0bbd5964",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzIwGtLQ0IY5zV\nZKCCDUD8XQsj1P/hLSr8LLpGup1RmDZw1LQ2OR76z9gEWUGV/8C2QcGuRr0HgFAm\nZ0SILaR5IFGMbePo40QPYieOHmf7VBCraon9CHC9vOLRt1FgQNbgEajaGjz88Tb0\nBrVWNpvGuhLMEdM3fPEU8j67j6zBSZPHW3RoZW25QBGvjT0bF3TUoroEHYbvN4y1\n9LyHNsPci1APBrHrUZDOy/R7VGKw9Fo1OBdW6NTLC8Wn8f9BWUgKs+ynX4x30P2O\n9IdiNwgf6/WgQP7aKginR+VrGPoN+jMq0l0n/b4OnxQvaZ5ycrff7qgYCk4c8egB\nrOPv9S0TAgMBAAECggEAVe0YxMSzV67Qb9uQ0lEhNuw6h7mH868Cy2t4/qxNAfKN\nSpn8x3Wm0pAYAh3+Q8El40avbLUpvwthZspqKRgbqK5D76RWikNZRjfC2XzkS74L\nMO4tul3uFlUgR5AzTIRNjbVq1RN45auevHbrTKttFWnz0kdKlXcs/OsmBDnql9ux\nCMmUGUsZlHJwt33F3puVYLMz+iEgVkqvPcOQVctu9DLrHUZvWFSgoHssqEfH02w8\nFf5F9R2TSyQ8TD9i8a2PxeXwp81EqVbAb22PmaBabNnfBw5o7Ky92w7neXAyhW7b\nXTm0uVhFFL8dQolT8qBVQKGxckqhH7Z1xj3pE2h6AQKBgQDo4eTzYPS1bAqeGYWL\nhamgHYxbVnrLXWhOPbY7Hx4XC9I7OOboDfqPJLMhGLnEC5kN4HxAnd/jpTDNAhyj\nxRZ5h97jt/dhlcHbBO11YnhmlWtYELFnTGwfek7DVgQukT/pNBPGe1xNQVCYpYS7\nNRky/FFEycjN2kdd3PXU21dH0wKBgQDE604Sg6bmXXaOxQv7fcS0yk0na/UPWt1v\nEQ8gKWz4hUQdAs2hrZ53YNbi7W5qb6Qz+uAHbRNtceMej2R2SQSLtLjFuHilcC9N\nv014jIfGmb6jOJvfYxa4SJb/z8QkRV9/lIZZilrEgloYXp1VrEMkRDSlK7Gw6DYT\nNaf7jtJ9wQKBgEJ7QlXsRs+H4VwS4xnadXsdFFV60aE+sCkt2tjz4C4qFMENVHXI\nj8/PZUe8fEOoH/BjNnVn3GNrZAwSX0StXeYh0JJnkTqNewLgXD2Xd9GpNDS2xz47\nBd7SlquS4ay9kGYtlLujuczgKXb6QXMEDIaOm1Cs3iNN/fOgwZkbaMY7AoGAPrnl\nqKgfJgpnlZrW8klhu2UlpoURDs8W8iYw90G64H8y7zrRXcr8S3KhgK+5GFZvq88i\nRbtNEPPSMQ3kJnmj5QywPutAIxLVPqLNfrTlGzImM7/4hvP9bL5SuzHnfNZMUUty\ncFtOBoKvSEv7OishSBAh5OtCMuQFNaFF3S/lhQECgYEA5i6lUYoWz606rIjMftaX\nTaQ9Gwm8V6FdWh3pN7c0HBlhM9p0umxDe/qsZ1grJf5IIl4ugCzukKu++z3Xd+x3\nQiqEfwDTYURgO2W1IamGHJ9BgheA8bV2Be0DW5cNnGqhIbE0tQTuumqvDfxlYa6V\nmzPhhj526VA6ehlwaiH4QGw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ml1so@translasi-lampung.iam.gserviceaccount.com",
+  "client_id": "101045561572227901805",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ml1so%40translasi-lampung.iam.gserviceaccount.com"
+}
