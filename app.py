@@ -99,7 +99,7 @@ with st.form(key="search form"):
                     resultfinal = resultfinal + " " + result
                     # st.success(resultfinal)
                 st.markdown(
-                    f"<div class='st-alert st-alert-success' style='background-color: #ffffb0; font-size: 20px; font-weight: bold;'>Dalam Bahasa {option2} artinya: {resultfinal}</div>",
+                    f"<div class='st-alert st-alert-success' style='background-color: #FFFFFF; font-size: 20px; font-weight: bold;'>Dalam Bahasa {option2} artinya: {resultfinal}</div>",
                     unsafe_allow_html=True,
                 )
 
@@ -120,7 +120,7 @@ with st.form(key="search form"):
                     
                 # st.success(resultfinal)
                 st.markdown(
-                    f"<div class='st-alert st-alert-success' style='background-color: #ffffb0; font-size: 20px; font-weight: bold;'>Dalam Bahasa {option2} artinya: {resultfinal}</div>",
+                    f"<div class='st-alert st-alert-success' style='background-color: ##FFFFFF; font-size: 20px; font-weight: bold;'>Dalam Bahasa {option2} artinya: {resultfinal}</div>",
                     unsafe_allow_html=True,
                 )
                 # translate = translator.translate(text,lang_src=value1,lang_tgt=value2)
