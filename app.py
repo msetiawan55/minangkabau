@@ -64,7 +64,7 @@ if "Translasi":
     with col1:               # To display the header text using css style
 
         st.markdown(""" <style> .font {
-        font-size:35px ;  font-family: 'Cooper Black'; color: #C21616;   transform: translateX(8%); text-align: justify;} 
+        font-size:35px ;  font-family: 'Cooper Black'; color: #C21616;   transform: translateX(1%); text-align: justify;} 
         </style> """, unsafe_allow_html=True)
         st.markdown('<p class="font">Translasi Bahasa Minangkabau</p>', unsafe_allow_html=True)    
     base_url = "https://bade.jasaedukasi.com/translator?versi=2&mode={}&bahasa={}&text={}"
