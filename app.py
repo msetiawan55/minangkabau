@@ -59,21 +59,15 @@ def get_data(url):
 	resp = requests.get(url)
 	return resp.json()       
 
-if "Translasi":
-    col1, col2 = st.columns( [100, 0.2])
-    with col1:               # To display the header text using css style
+base_url = "https://bade.jasaedukasi.com/translator?versi=2&mode={}&bahasa={}&text={}"
 
-        st.markdown(""" <style> .font {
-        font-size:35px ;  font-family: 'Cooper Black'; color: #C21616;   transform: translateX(1%); text-align: justify;} 
-        </style> """, unsafe_allow_html=True)
-        st.markdown('<p class="font">Translasi Bahasa Minangkabau</p>', unsafe_allow_html=True)    
-    base_url = "https://bade.jasaedukasi.com/translator?versi=2&mode={}&bahasa={}&text={}"
+Languages = {'Minangkabau':'padang_minang','Indonesia':'indonesia'}
 
-    Languages = {'Minangkabau':'padang_minang','Indonesia':'indonesia'}
+st.title("Translasi Bahasa Minangkabau")         
 
-            
 
-    with st.form(key="search form"):
+
+with st.form(key="search form"):
 
         search_term = st.text_area("Masukan teks anda disini")
         # text = st.text_area("Enter text:",height=None,max_chars=None,key=None,help="Enter your text here")
