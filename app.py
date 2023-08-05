@@ -53,7 +53,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('bunda.png')     
+add_bg_from_local('kuning.png')     
 
 def get_data(url):
 	resp = requests.get(url)
