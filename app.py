@@ -1,10 +1,10 @@
-import streamlit as st # pip install streamlit==0.82.0
+import streamlit as st # pip install streamlit==0.82.0                  
 import requests
 import os
 import base64
 from  PIL import Image
 from streamlit_option_menu import option_menu
-import streamlit.components.v1 as html
+import streamlit.components.v1 as html        
 
 
 ###logo###
@@ -33,16 +33,16 @@ with container:
     st.markdown(
         f"<div style='text-align: center; width: {container_width}px;'>"
         f"</div>",
-        unsafe_allow_html=True
+        unsafe_allow_html=True             
     )
 
 ####logo###
 
 
 
-def add_bg_from_local(image_file):
+def add_bg_from_local(image_file):          
     with open(image_file, "rb") as image_file:
-        encoded_string = base64.b64encode(image_file.read())
+        encoded_string = base64.b64encode(image_file.read())         
     st.markdown(
     f"""
     <style>
@@ -53,21 +53,27 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('kuning.png')     
+add_bg_from_local('bunda.png')     
 
-def get_data(url):
+def get_data(url):                   
 	resp = requests.get(url)
-	return resp.json()       
+	return resp.json()               
+           
+if "Translasi":
+    col1, col2 = st.columns( [100, 0.2])
+    with col1:               # To display the header text using css style
 
-base_url = "https://bade.jasaedukasi.com/translator?versi=2&mode={}&bahasa={}&text={}"
+        st.markdown(""" <style> .font {
+        font-size:35px ;  font-family: 'Cooper Black'; color: #C21616;   transform: translateX(10%); text-align: justify;} 
+        </style> """, unsafe_allow_html=True)
+        st.markdown('<p class="font">Translasi Bahasa Minangkabau</p>', unsafe_allow_html=True)      
+    base_url = "https://bade.jasaedukasi.com/translator?versi=2&mode={}&bahasa={}&text={}"
 
-Languages = {'Minangkabau':'padang_minang','Indonesia':'indonesia'}
+    Languages = {'Minangkabau':'padang_minang','Indonesia':'indonesia'}
 
-st.title("Translasi Bahasa Minangkabau")         
+            
 
-
-
-with st.form(key="search form"):
+    with st.form(key="search form"):         
 
         search_term = st.text_area("Masukan teks anda disini")
         # text = st.text_area("Enter text:",height=None,max_chars=None,key=None,help="Enter your text here")
@@ -87,7 +93,7 @@ with st.form(key="search form"):
                 st.error('Tidak bisa mentranslasi bahasa yang sama')
                
             elif value1 == "padang_minang":
-                mode = 1
+                mode = 1                                                       
                 # Create Search Query
                 search_url = base_url.format(mode, value1, search_term)
                 # st.write(search_url)
@@ -96,10 +102,10 @@ with st.form(key="search form"):
                 resultfinal = ""
                 for i in range(len(data['response']['indonesia'])):
                     result = data['response']['indonesia'][i]['k']
-                    resultfinal = resultfinal + " " + result
+                    resultfinal = resultfinal + " " + result                     
                     # st.success(resultfinal)
                 st.markdown(
-                    f"<div class='st-alert st-alert-success' style='background-color: #FFFFFF; font-size: 20px; font-weight: bold;'>Dalam Bahasa {option2} artinya: {resultfinal}</div>",
+                    f"<div class='st-alert st-alert-success' style='background-color: #ffffb0; font-size: 20px; font-weight: bold;'>Dalam Bahasa {option2} artinya: {resultfinal}</div>",
                     unsafe_allow_html=True,
                 )
 
@@ -120,7 +126,7 @@ with st.form(key="search form"):
                     
                 # st.success(resultfinal)
                 st.markdown(
-                    f"<div class='st-alert st-alert-success' style='background-color: #FFFFFF; font-size: 20px; font-weight: bold;'>Dalam Bahasa {option2} artinya: {resultfinal}</div>",
+                    f"<div class='st-alert st-alert-success' style='background-color: #ffffb0; font-size: 20px; font-weight: bold;'>Dalam Bahasa {option2} artinya: {resultfinal}</div>",
                     unsafe_allow_html=True,
                 )
                 # translate = translator.translate(text,lang_src=value1,lang_tgt=value2)
